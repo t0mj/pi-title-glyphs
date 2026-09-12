@@ -1,0 +1,52 @@
+{
+  "name": "pi-title-glyphs",
+  "version": "0.1.0",
+  "description": "Live session status in your terminal/tab title for pi: provider glyph, working/needs-you/resting state, and what it's doing \u2014 event-driven, no LLM calls.",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-extension",
+    "pi-coding-agent",
+    "terminal",
+    "title",
+    "tab-title",
+    "status",
+    "tui"
+  ],
+  "license": "MIT",
+  "author": "t0mj",
+  "homepage": "https://github.com/t0mj/pi-title-glyphs#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t0mj/pi-title-glyphs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/t0mj/pi-title-glyphs/issues"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "0.85.1"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "package.json"
+  ],
+  "scripts": {
+    "test": "node --test test/",
+    "prepublishOnly": "npm test"
+  }
+}
