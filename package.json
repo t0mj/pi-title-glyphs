@@ -1,6 +1,6 @@
 {
   "name": "pi-title-glyphs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Live session status in your terminal/tab title for pi: provider glyph, working/needs-you/resting state, and what it's doing \u2014 event-driven, no LLM calls.",
   "keywords": [
     "pi-package",

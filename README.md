@@ -10,6 +10,8 @@ resting**, and **what it's doing** — without clicking into any of them.
 ♊ ✓ · Add a retry budget to the fetch helper        resting — finished, idle
 ```
 
+![The headers, in the wild](https://raw.githubusercontent.com/t0mj/pi-title-glyphs/main/img/headers.png)
+
 No LLM calls, ever. Every state comes from a pi event, and every string is plain
 truncation — so the title costs no tokens and adds no latency.
 

@@ -4,6 +4,14 @@ All notable changes to this project are documented here. Format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning is
 [SemVer](https://semver.org/spec/v2.0.0.html).
 
+## 0.1.1 — 2026-09-13
+
+No code changes. Republish to force an npm search-index re-entry: 0.1.0 was
+published during an npm search index gap (`searchScore: 0` — findable by
+maintainer query, absent from the `keywords:pi-package` feed), which left it
+out of the pi.dev/packages gallery. A fresh publish event triggers reindexing;
+equivalent reports: earendil-works/pi issues #6991, #7849, #7987, #8830.
+
 ## 0.1.0 — 2026-09-11
 
 Initial public release. Verified on pi 0.85.1, macOS + Ghostty, node 26.
