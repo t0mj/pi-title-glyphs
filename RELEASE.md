@@ -42,3 +42,14 @@ npm publish --dry-run                      # then, by hand: npm login && npm pub
 | Gate 3: self-vet | network 0 · child_process/eval 0 · obfuscation 0 · **writes 0** · reads 1 (the documented badge file, user-controlled path) · env reads 3 (own namespace) · registered tools/commands 0 · prototype patches 0 · runtime deps 0 · install scripts 0 |
 | Live session check | **confirmed by the maintainer 2026-09-11** after the local cutover: glyphs render correctly, no bugs observed. This was the one thing the automated checks could not verify themselves |
 
+## v0.1.1 worksheet — 2026-09-13
+
+| Item | Result |
+|---|---|
+| Why | 0.1.0 fell into an npm search-index gap (`searchScore: 0`) → absent from the pi.dev gallery despite correct metadata. Fix = a fresh publish (known mode: pi tracker #6991/#7849/#7987/#8830; pi-wecom-notify controlled experiment ~2.5 h to appear) |
+| Code | **no code changes** — `src/` byte-identical to v0.1.0 (commit `faf5a0f`) |
+| Diff | `package.json` version, `CHANGELOG.md` entry, `README.md` headers screenshot (`img/headers.png` in repo; **absolute GitHub raw URL** — npm/pi.dev renderers don't serve relative README assets; image not in the `files` tarball) |
+| Gates | `npm test` 11/11 · tarball 6 files, each byte-identical to `faf5a0f` · raw image URL 200 after push |
+| Publish | **2026-09-13 17:24 PDT, Crow's terminal** — first attempt 404 (dead 0.1.0-window token; `npm whoami` 401 = no valid credentials, not a package problem), re-auth, landed |
+| Open | confirm the gallery listing: `curl "https://pi.dev/packages?name=pi-title-glyphs"` → `1-1 / 1 (of N)` |
+
